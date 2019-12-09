@@ -1,0 +1,116 @@
+
+.content{
+      font-size: 10px;
+      font-weight: 500;
+      color: gray;
+      margin-right:30px;
+      margin-top:5px;
+      min-width:max-content;
+  }
+
+  .checked{
+    color:#ff6d22;
+  }
+  .amenties-soap{
+    height: 25px;
+    margin-right:14px;
+  }
+  .amenties-lock{
+    height: 25px;
+    margin-right:13px;
+  }
+  .amenties-light{
+    height: 30px;
+    margin-right:10px;
+  }
+  .amenties-wash{
+    height: 25px;
+    margin-right:17px;
+    margin-left: 5px;
+  }
+  .amenties-shower{
+    height: 27px;
+    margin-right:10px;
+  }
+  .amenties-window{
+    height: 25px;
+    margin-right:12px;
+  }
+  .container{
+    margin-left: 10px;
+  }
+  .col1{
+    margin-left:26%;
+  }
+  .col2{
+    margin-left:4%;
+  }
+  .cls{
+    margin-top: 5px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #696969;
+  }
+  .fa-location-arrow{
+    font-size: smaller;
+    color:#696969;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .fa-wheelchair{
+    margin-left:5px;
+    color: #696969;
+  }
+  .fa-restroom{
+      margin-top: 25px;
+      margin-left: -60px;
+      font-weight: 900;
+      font-size: large;
+      color: #696969;
+  }
+  .western{
+      width: 35px;
+      height: 45px;
+      margin-left: 5px;
+      margin-top: 5px;
+  }
+  .loo-types {
+      width: 355px;
+      min-height: 250px;
+      max-height: 95vh;
+      margin:auto;
+      margin-top: 30px;
+      overflow-x: auto;
+      background: #fff;
+      box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+    }
+  .btn-default{
+    border-radius:5px;
+    font-size:11px; 
+    color:gray;
+    border-color: gray;
+    padding: inherit;
+    margin-bottom: 10px;
+    width:98px;
+    display:block;
+    margin-top:10px;
+  }
+  .rating {
+    display:flex; 
+    max-height: 20px;
+  }
+  .alt{
+    font-size: 13px;
+    font-weight: bold; 
+    color: gray;
+    margin-bottom:5px;
+    display:flex;
+  }
+  p{
+    font-size: 10px;
+    margin-top:5px;
+  }
+  .d-flex{
+    margin-bottom: 5px;;
+  }

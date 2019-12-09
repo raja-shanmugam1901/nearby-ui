@@ -1,0 +1,44 @@
+.left{
+  float:left;
+  margin-right: 10px;
+}
+.right{
+  float:right;
+}
+.center{
+  contain:size;
+}
+.menu{
+  height: 35px;
+}
+.search-icon{
+  width:15px;
+  margin-left: -20px;
+  top: 4px;
+  margin-right:20px;
+}
+
+.search {
+  height: 25px;
+  font-size: 10px;    
+  width: 38%;
+  text-align:center;
+  margin-top: 5px;
+  background:#fff;
+  border: none;
+  border-radius: 5px;
+}
+.logo{
+  height: 35px;
+}
+.appbar {
+    background-color: #3e3e48;
+    color: #fff;
+    padding: 0.5rem 0.0625rem;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
