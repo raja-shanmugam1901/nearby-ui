@@ -3,14 +3,14 @@
      <div class="alt">Amenities</div>
       <div>
         <div class="row" v-for="item in amenities" :key="item.id">
-          <div class = " col-5 d-flex " v-for="val in item.Amenities" :key="val" >
-            <img v-if="val === constants.AMENITIES.soap" src="../assets/soap.png" class="amenties-soap"/>
-            <img v-if="val === constants.AMENITIES.wash" src="../assets/wash.png" class="amenties-wash"/>
-            <img v-if="val === constants.AMENITIES.lock" src="../assets/lock.png" class="amenties-lock"/>
-            <img v-if="val === constants.AMENITIES.faucet" src="../assets/shower.png" class="amenties-shower"/>
-            <img v-if="val === constants.AMENITIES.light"  src="../assets/light.png" class="amenties-light"/>
-            <img v-if="val === constants.AMENITIES.window"  src="../assets/security.png" class="amenties-window"/>          
-          <div class="content">{{val}}</div>
+          <div class = " col-5 d-flex " v-for="list in item.Amenities" :key="list" >
+            <img v-if="list === constants.AMENITIES.soap" src="../assets/soap.png" class="amenties-soap"/>
+            <img v-if="list === constants.AMENITIES.wash" src="../assets/wash.png" class="amenties-wash"/>
+            <img v-if="list === constants.AMENITIES.lock" src="../assets/lock.png" class="amenties-lock"/>
+            <img v-if="list === constants.AMENITIES.faucet" src="../assets/shower.png" class="amenties-shower"/>
+            <img v-if="list === constants.AMENITIES.light"  src="../assets/light.png" class="amenties-light"/>
+            <img v-if="list === constants.AMENITIES.window"  src="../assets/security.png" class="amenties-window"/>          
+          <div class="content">{{list}}</div>
          </div>
        </div>
     </div>
