@@ -28,5 +28,13 @@ class AmenitieService {
     }
     return this.NewToilet;
   }
+  public async deleteToilet(loo: string): Promise<any> {
+   try {
+     const response = await this.instance.delete('http://localhost:3000/toilet', { headers: { loo } });
+     return response;
+   } catch (error) {
+     throw (error);
+   }
+  }
 }
 export default new AmenitieService();

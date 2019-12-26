@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="item in amenties" :key="item.id">
-      <div class="loo-types" v-for="loo in item.toilets" :key="loo.id">
+      <div class="loo-types" v-for="loo in item.Toilets" v-bind:key="loo">
         <div class="d-flex">
           <img src="@/assets/western.png" class="western" />
           <div class="cls">
@@ -21,6 +21,7 @@
               <img src="@/assets/gallery.png" width="25px" class="img" />
               <img src="@/assets/info.png" width="27px" class="img" />
               <img src="@/assets/warning.png" width="25px" class="warn" />
+              <img class="delete" src="../assets/delete.png" @click="deleteToilet(loo)" width="15px" height="15px"/>
             </div>
           </div>
         </div>

@@ -24,4 +24,11 @@ export default class LooTypes extends Vue {
         return this.errorMessage = Constants.ERROR_MESSAGE;
       }
     }
+    private async deleteToilet(loo: string) {
+       try {
+         await this.$store.dispatch('AmenitiesListModule/deleteToilet', loo);
+       } catch (err) {
+        return this.errorMessage = Constants.ERROR_MESSAGE;
+      }
+    }
 }

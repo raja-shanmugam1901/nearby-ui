@@ -25,19 +25,19 @@
           <p class="present">Amenities present</p>
           <p class="present">Toilet Type</p>
           <div class="check-group d-flex row-3">
-            <input type="checkbox" id="Male" value="Male" v-model="report.type" />
+            <input type="checkbox" id="Male" value="Male" />
             <p class="p1">Male</p>
-            <input type="checkbox" id="Female" value="Female" v-model="report.type" />
+            <input type="checkbox" id="Female" value="Female" />
             <p class="p2">Female</p>
-            <input type="checkbox" id="Child" value="Child" v-model="report.type" />
+            <input type="checkbox" id="Child" value="Child" />
             <p class="p3">Child</p>
           </div>
           <div class="check-group d-flex row-3">
-            <input type="checkbox" id="Disabled" value="Disabled" v-model="report.type"/>
+            <input type="checkbox" id="Disabled" value="Disabled"/>
             <p class="p4">Disabled</p>
-            <input type="checkbox" id="Unisex" value="Unisex"  v-model="report.type"/>
+            <input type="checkbox" id="Unisex" value="Unisex"  />
             <p class="p5">Unisex</p>
-            <input type="checkbox" id="Dump point" value="Dump point" v-model="report.type"/>
+            <input type="checkbox" id="Dump point" value="Dump point" />
             <p class="p6">Dump point</p>
           </div>
           <div class="d-flex justify-content-center footer">

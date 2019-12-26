@@ -32,4 +32,13 @@
         throw err;
       }
     }
+    @Action({ commit: 'setAmenitiesList '})
+    public async deleteToilet(loo: string) {
+      try {
+        const resp = await AmenitiesService.deleteToilet(loo);
+        return resp;
+      } catch (error) {
+        throw error;
+      }
+    }
   }

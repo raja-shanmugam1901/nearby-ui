@@ -8,7 +8,6 @@ export default class NewToilet extends Vue {
         title: '',
         location: '',
         extraInfo: '',
-        type: [],
     };
 
     public showModal() {
@@ -21,8 +20,6 @@ export default class NewToilet extends Vue {
     }
     public async hideAlert() {
         this.$modal.hide('alert-modal');
-        await this.$store.dispatch('AmenitiesListModule/getAmenitiesList');
-        window.location.reload();
     }
     public cancel() {
         this.$modal.hide('report-modal');
