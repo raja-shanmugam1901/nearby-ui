@@ -12,6 +12,7 @@ export default class LooTypes extends Vue {
     private amenties: AmenitiesModel[] = [];
     private errorMessage: string = '';
     private constants = Constants;
+
     private created() {
       this.getAmenitiesList();
     }
@@ -21,14 +22,23 @@ export default class LooTypes extends Vue {
         await this.$store.dispatch('AmenitiesListModule/getAmenitiesList');
         this.amenties = this.$store.state.AmenitiesListModule.amenitiesList;
       } catch (err) {
-        return this.errorMessage = Constants.ERROR_MESSAGE;
+        return this.errorMessage = this.constants.ERROR_MESSAGE;
       }
     }
     private async deleteToilet(loo: string) {
        try {
          await this.$store.dispatch('AmenitiesListModule/deleteToilet', loo);
+         const response = this.$store.state.AmenitiesListModule.reportData;
+         const data = response.data;
+         const success = this.constants.SUCCESS;
+         if (data === success) {
+           this.$modal.show('alert-modal');
+         }
        } catch (err) {
-        return this.errorMessage = Constants.ERROR_MESSAGE;
+        return this.errorMessage = this.constants.ERROR_MESSAGE;
       }
     }
+    private hideAlert() {
+      this.$modal.hide('alert-modal');
+  }
 }

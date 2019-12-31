@@ -3,7 +3,7 @@ class Constants {
     public SECURITY = 'Security';
     public HYGIENE = 'Cleanliness and Hygiene';
     public DIRECTIONS = 'Get directions';
-
+    public SUCCESS = 'Success';
     public API_BASE_URL = window.location.href;
     public API_TIMEOUT = 1000;
     public ERROR_MESSAGE = 'Something went wrong!';

@@ -8,10 +8,15 @@
   })
   export default class AmenitiesListModule extends VuexModule {
     private amenitiesList!: AmenitiesModel[];
-    private reportData: any;
+    private reportData!: string;
     @Mutation
     public setAmenitiesList(list: AmenitiesModel[]) {
       this.amenitiesList = list;
+    }
+
+    @Mutation
+    public setDeleteToilet(loo: string) {
+      this.reportData = loo;
     }
 
     @Action({ commit: 'setAmenitiesList' })
@@ -32,7 +37,7 @@
         throw err;
       }
     }
-    @Action({ commit: 'setAmenitiesList '})
+    @Action({ commit: 'setDeleteToilet' })
     public async deleteToilet(loo: string) {
       try {
         const resp = await AmenitiesService.deleteToilet(loo);

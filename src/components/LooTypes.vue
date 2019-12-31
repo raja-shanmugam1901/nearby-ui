@@ -27,6 +27,15 @@
         </div>
         <Amenities></Amenities>
       </div>
+         <modal name="alert-modal" width="300" height="140">
+      <div class="modal-header"></div>
+      <div class="modal-body">
+        <h6 style="color:black"> Toilet Deleted Successfully</h6>
+      </div>
+      <div class="modal-footer">
+        <button class="ok" @click="hideAlert()">Ok</button>
+      </div>
+    </modal>
     </div>
   </div>
 </template>
